@@ -1,8 +1,68 @@
+@import 'scss/cssReset';
+
 html{
 	body{
-		background-color: salmon;
+		position: relative;
 		#root{
+			#Routes{
+				.TopNavigation{
+					position: fixed;
+					background-color: salmon;
+					height: 50px;
+					width: 100%;
+					left: 200px;
+					z-index: 1;
+				}
+				.SideNavigation{
+					position: fixed;
+					width: 200px;
+					height: 100vh;
+					background-color: red;
+					.Menu{
+						ul{
+							li{
+								height: 40px;
+								line-height: 40px;
+								transition: all .3s;
+								&:hover{
+									background-color: salmon;
+								}
+							}
+							.DropdownNavigation{
+								li{
 
+								}
+								.DropdownMenu{
+									transition: all .3s;
+									overflow: hidden;
+									.Menu{
+										ul{
+											li{
+												height: 40px;
+												line-height: 40px;
+												padding-left: 30px;
+												a{
+													cursor: pointer;
+													color: black;
+													&:hover{
+														text-decoration: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.Content{
+					position: absolute;
+					top: 60px;
+					left: 200px;
+					right: 0;
+				}
+			}
 		}
 	}
 }

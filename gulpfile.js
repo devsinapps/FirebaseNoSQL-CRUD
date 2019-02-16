@@ -17,6 +17,6 @@ gulp.task('minCSS', ()=>{
 
 
 gulp.task('watch', ()=>{
-	gulp.watch('src/style/main.scss', ['sass'])
-	gulp.watch('src/style/css/main.scss', ['minCSS'])
+	gulp.watch('src/components/style/main.scss', ['sass'])
+	gulp.watch('src/components/style/css/main.css', ['minCSS'])
 })

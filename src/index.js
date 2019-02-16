@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './routes'
+import './components/style/minify/main.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import thunk from 'redux-thunk'
 import { createStore, compose, applyMiddleware } from 'redux'
